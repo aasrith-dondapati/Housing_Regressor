@@ -22,11 +22,11 @@ def index():
 def predict():
     model_name = request.form['model']
     input_data = {
-        'Avg. Area Income': float(request.form['Avg. Area Income']),
-        'Avg. Area House Age': float(request.form['Avg. Area House Age']),
-        'Avg. Area Number of Rooms': float(request.form['Avg. Area Number of Rooms']),
-        'Avg. Area Number of Bedrooms': float(request.form['Avg. Area Number of Bedrooms']),
-        'Area Population': float(request.form['Area Population'])
+        'Avg. Area Income': float(request.form['Avg. Area Income']), # Average income of the area Input Field
+        'Avg. Area House Age': float(request.form['Avg. Area House Age']), # Average age of the houses in the area Input Field
+        'Avg. Area Number of Rooms': float(request.form['Avg. Area Number of Rooms']), # Average number of rooms in the houses in the area Input Field
+        'Avg. Area Number of Bedrooms': float(request.form['Avg. Area Number of Bedrooms']), # Average number of bedrooms in the houses in the area Input Field
+        'Area Population': float(request.form['Area Population']) # Population of the area Input Field
     }
     input_df = pd.DataFrame([input_data])
     

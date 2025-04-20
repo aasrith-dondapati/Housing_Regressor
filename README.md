@@ -1,6 +1,6 @@
 # Housing Price Regression Project
 
-This project implements various regression models to predict house prices based on various features. The project includes multiple machine learning models and a web interface for making predictions.
+This project uses different machine learning models to predict house prices based on features like size and location. It also includes a web app for users to get price estimates.
 
 ## Project Structure
 
